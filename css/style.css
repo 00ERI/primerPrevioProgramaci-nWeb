@@ -1,74 +1,78 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    /* Asegura que el background sea consistente */
-    background: #f7f7f7 !important; 
+/* Estilos para el cuerpo y el contenedor principal */
+body {
+    background: #f7f7f7;
 }
 
-/* El centrado general lo manejo en el HTML con flexbox en el body/container */
-
-.card {
-    height: auto;
-    width: 350px; /* Ancho fijo para la tarjeta */
-    background-color: #fff !important;
-    border-radius: 15px !important; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 20px; /* Espaciado interno de la tarjeta */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Estilos para la tarjeta del login */
+.login-card {
+    width: 350px;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el logo y su contenedor */
 .logo-container {
+    padding: 2rem 1.5rem 0;
     text-align: center;
-    margin-bottom: 2rem; /* Espacio debajo del logo */
 }
 
 .logo-container img {
-    max-width: 150px; /* Tamaño máximo para el logo */
-    height: auto;      /* Mantiene la proporción */
-    display: block;    /* Asegura que `margin: auto` funcione si se necesitara centrar */
-    margin: 0 auto;    /* Centra el logo horizontalmente si es más pequeño que max-width */
+    max-width: 250px; /* Aumentamos el tamaño máximo para que se vea bien */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Estilos para el cuerpo del formulario */
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Estilos para las etiquetas de los campos */
 .label-text {
     color: #6c757d;
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    display: block; /* Para que la etiqueta ocupe su propia línea */
+    display: block;
 }
 
-.form-group {
-    margin-bottom: 1.5rem; /* Espaciado entre grupos de formulario */
-}
-
+/* Estilos para los campos de entrada */
 .form-control {
     border: 1px solid #ccc;
-    border-radius: 5px; /* Bordes redondeados para inputs */
+    border-radius: 5px;
     height: 50px;
     padding-left: 15px;
     font-size: 1rem;
     color: #333;
-    background-color: #fff;
-    width: 100%; /* El input ocupa todo el ancho disponible */
+    width: 100%;
 }
 
 .form-control:focus {
     box-shadow: none;
-    border-color: #007bff; /* Color de borde al enfocar */
+    border-color: #007bff;
 }
 
-.login_btn {
+/* Estilos para el botón de ingresar */
+.login-btn {
     width: 100%;
-    background-color: #e3001a !important; /* Color de fondo del botón */
-    color: white !important;
-    border-radius: 50px !important; /* Botón completamente redondeado */
+    background-color: #e3001a;
+    color: white;
+    border-radius: 50px;
     font-size: 1.2rem;
     font-weight: bold;
     height: 50px;
     border: none;
-    margin-top: 1.5rem; /* Espacio encima del botón */
-    cursor: pointer; /* Indica que es clickeable */
 }
 
-.login_btn:hover {
-    background-color: #b00014 !important; /* Color al pasar el mouse */
+.login-btn:hover {
+    background-color: #b00014;
 }
