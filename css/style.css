@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Asegura que el background sea consistente */
+    background: #f7f7f7 !important; 
+}
+
+/* El centrado general lo manejo en el HTML con flexbox en el body/container */
+
+.card {
+    height: auto;
+    width: 350px; /* Ancho fijo para la tarjeta */
+    background-color: #fff !important;
+    border-radius: 15px !important; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno de la tarjeta */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 2rem; /* Espacio debajo del logo */
+}
+
+.logo-container img {
+    max-width: 150px; /* Tamaño máximo para el logo */
+    height: auto;      /* Mantiene la proporción */
+    display: block;    /* Asegura que `margin: auto` funcione si se necesitara centrar */
+    margin: 0 auto;    /* Centra el logo horizontalmente si es más pequeño que max-width */
+}
+
+.label-text {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block; /* Para que la etiqueta ocupe su propia línea */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Espaciado entre grupos de formulario */
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados para inputs */
+    height: 50px;
+    padding-left: 15px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    width: 100%; /* El input ocupa todo el ancho disponible */
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff; /* Color de borde al enfocar */
+}
+
+.login_btn {
+    width: 100%;
+    background-color: #e3001a !important; /* Color de fondo del botón */
+    color: white !important;
+    border-radius: 50px !important; /* Botón completamente redondeado */
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    margin-top: 1.5rem; /* Espacio encima del botón */
+    cursor: pointer; /* Indica que es clickeable */
+}
+
+.login_btn:hover {
+    background-color: #b00014 !important; /* Color al pasar el mouse */
+}
