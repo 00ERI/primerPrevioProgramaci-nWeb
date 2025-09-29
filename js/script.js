@@ -17,22 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const codigo = codigoEstudianteInput.value;
         const password = passwordInput.value;
 
-        // Validación de la contraseña (por seguridad)
-        if (password !== '1234') {
-            alertMessage.textContent = 'Credenciales no válidas.';
-            alertMessage.style.display = 'block';
-            codigoEstudianteInput.value = '';
-            passwordInput.value = '';
-            return;
-        }
-
         const data = {
             codigo,
-            clave: password
+            clave: password // El código envía la clave que se ingresa en el campo de texto
         };
 
         try {
-            const response = await fetch('https://api-parcial.crangarita.repl.co/login', {
+            const response = await fetch('https://24a0dac0-2579-4138-985c-bec2df4bdfcc-00-3unzo70c406dl.riker.replit.dev/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
