@@ -26,7 +26,7 @@ body {
 }
 
 .logo-container img {
-    max-width: 250px; /* Aumentamos el tamaño máximo para que se vea bien */
+    max-width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -40,7 +40,7 @@ body {
 /* Estilos para las etiquetas de los campos */
 .label-text {
     color: #6c757d;
-    font-size: 1rem;
+    font-size: 14px; /* <--- Tamaño de fuente ajustado a 14px */
     margin-bottom: 0.5rem;
     display: block;
 }
@@ -51,7 +51,7 @@ body {
     border-radius: 5px;
     height: 50px;
     padding-left: 15px;
-    font-size: 1rem;
+    font-size: 16px; /* <--- Tamaño de fuente ajustado a 16px */
     color: #333;
     width: 100%;
 }
@@ -63,16 +63,19 @@ body {
 
 /* Estilos para el botón de ingresar */
 .login-btn {
-    width: 100%;
-    background-color: #e3001a;
-    color: white;
-    border-radius: 50px;
-    font-size: 1.2rem;
+    width: 215px !important; /* <--- Ancho ajustado a 215px */
+    height: 32px !important; /* <--- Alto ajustado a 32px */
+    background-color: #D31024 !important;
+    color: white !important;
+    font-size: 16px; /* <--- Tamaño de fuente ajustado a 16px */
     font-weight: bold;
-    height: 50px;
     border: none;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 20px !important; /* <--- Curvatura izquierda baja ajustada a 20px */
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
 }
 
 .login-btn:hover {
-    background-color: #b00014;
+    background-color: #a40c1d !important;
 }

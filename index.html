@@ -16,21 +16,24 @@
                 <img src="imagenes/logo-horizontal.jpg" alt="Logo UFPS">
             </div>
             <div class="card-body">
-                <form>
+                <form id="login-form">
                     <div class="form-group mb-4">
                         <label for="codigoEstudiante" class="label-text">Código de Estudiante</label>
-                        <input id="codigoEstudiante" type="text" class="form-control">
+                        <input id="codigoEstudiante" type="text" class="form-control" required>
                     </div>
                     <div class="form-group mb-4">
                         <label for="password" class="label-text">Password</label>
-                        <input id="password" type="password" class="form-control">
+                        <input id="password" type="password" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <input type="button" value="Ingresar" class="btn login-btn">
+                        <button type="submit" class="btn login-btn">Ingresar</button>
                     </div>
                 </form>
+                <div id="alert-message" class="alert alert-danger mt-3" style="display: none;"></div>
             </div>
         </div>
     </div>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
